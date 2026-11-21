@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Noto Sans Malayalam", "Noto Sans Tamil", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", "Noto Sans Malayalam", "Noto Sans Tamil", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  html[lang="ml"] body,
+  html[lang="ml"] h1,
+  html[lang="ml"] h2,
+  html[lang="ml"] h3,
+  html[lang="ml"] h4 {
+    font-family: "Noto Sans Malayalam", "DM Sans", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  html[lang="ta"] body,
+  html[lang="ta"] h1,
+  html[lang="ta"] h2,
+  html[lang="ta"] h3,
+  html[lang="ta"] h4 {
+    font-family: "Noto Sans Tamil", "DM Sans", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "CivicFix AI",
+  "description": "Full-stack civic issue reporting, AI visual triage, department dispatch, and field resolution verification platform.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
